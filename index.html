@@ -1,0 +1,197 @@
+<!-- Boilerplate -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <div id="top"></div>
+  </head>
+  <!-- Body Part -->
+  <body>
+    <header>
+      <!-- Navigation Bar -->
+      <nav class="navlinks">
+        <a href="#top" class="logo" style="font-family: 'Times New Roman', Times, serif;">PR<span style="color: red;">.</span></a>
+        <div class="nav-links">
+          <a href="#top" class="navbtn">Home</a>
+          <a href="#about" class="navbtn">About</a>
+          <a href="#skills" class="navbtn">Skills</a>
+          <a href="#projects" class="navbtn">Projects</a>
+          <a href="#contact" class="navbtn">Contact</a>
+        </div>
+      </nav>
+    </header>
+   
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="assets/profile-pic.jpeg" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h2 class="title">PriyanshiRathi</h2>
+        <p class="section__text__p2">CSE-DS Engineer</p>
+        <div class="btn-container">
+          <a href="#contact">
+          <button class="btn btn-color-1">
+          Contact Info
+          </button></a>
+        </div>
+        <div id="socials-container">
+          <a href=" https://www.linkedin.com/in/priyanshi-rathi-2b675239a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+          <img src="assets/linkedin.png" alt="My LinkedIn profile" class="icon"></a>
+          <a href=" https://github.com/priyanshirathi27-star" target="_blank">
+          <img src="assets/github.png" alt="My Github profile" class="icon"></a>
+        </div>
+      </div>
+    </section>
+    <!-- About Section -->
+    <!-- Contains Education details (in table) and About Para -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h2 class="title">About Me</h2>
+      <div class="section-container">
+        <div class="table-container">
+          <img src="./assets/education.png" alt="Education icon" class="icon" />
+          <h2>Education</h2>
+          <!-- Education details Table -->
+          <table>
+            <thead>
+              <tr>
+                <th>Qualification</th>
+                <th>Board/University</th>
+                <th>Instituion</th>
+                <th>Year of Passing</th>
+                <th>Percentage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>10th</td>
+                <td>CBSE</td>
+                <td> Dr KN Modi Global School  </td>
+                <td>2023</td>
+                <td>94%</td>
+              </tr>
+              <tr>
+                <td>12th</td>
+                <td>CBSE</td>
+                <td>Chaman Vatika Residential Public International School</td>
+                <td>2025</td>
+                <td>84.3%</td>
+              </tr>
+              <tr>
+                <td>B.Tech</td>
+                <td>AKTU</td>
+                <td>KIET Group of Institutions, Ghaziabad</td>
+                <td>2029</td>
+                <td>--</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- About Para -->
+        <div class="text-container">
+          <p>
+            Hi there! I'm skilled in HTML, CSS, and C, with a growing expertise in Git for version control. I'm constantly improving and expanding my technical abilities to build better, more efficient web applications.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section -->
+    <!-- Contains the overview of skillset -->
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h2 class="title">Skills</h2>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="skills-container">
+            <h2 class="experience-sub-title">Technical Skills</h2>
+            <div class="article-container">
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>C</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Git</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+            </article>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- Project Section -->
+    <!-- Contains the preview of done projects with button to github -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="project-details-container">
+        <div class="project-container color-container">
+          <img src="" alt="Project 1" class="project-img" />
+          <h2 class="experience-sub-title project-title">Project One</h2>
+          <p class="project-sec">EXAM-DAY-PLANNER</p>
+          <a href="" target="_blank"><button class="btn btn-color-1">Github</button></a>
+        </div>
+        <div class="project-container color-container">
+          <img src="" alt="Currently Working" class="project-img" />
+          <h2 class="experience-sub-title project-title">Project Two</h2>
+          <p class="project-sec">Art Gallery Website</p>
+          <a href="" target="_blank"><button class="btn btn-color-1">Github</button></a>
+        </div>
+        <div class="project-container color-container">
+          <img src="./assets/project-3.png" alt="Currently Working" class="project-img"/>
+          <h2 class="experience-sub-title project-title">& Many More...</h2>
+          <a href=" https://github.com/priyanshirathi27-star" target="_blank"><button class="btn btn-color-1">View Full Github</button></a>
+        </div>
+      </div>
+    </section>
+        
+    <!-- Contacts Section -->
+    <!-- Contains contact details with hyperlinks -->
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+          <p><a href="mailto:priyanshirathi90@gmail.com" class="navbtn">priyanshirathi90@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+          <p><a href="https://www.linkedin.com/in/priyanshi-rathi-2b675239a/" class="navbtn">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer section -->
+     <footer class="footer">
+      <p>&copy Priyanshi Rathi | All rights reserved.</p>
+     </footer>
+
+    <!-- End of file -->
+  </body>
+</html>

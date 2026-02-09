@@ -1,0 +1,413 @@
+/* CSS for portfolio website */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* Navigation Bar */
+
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+}
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+  border-bottom: 0.1rem solid black;
+  background-color: white;
+}
+
+.nav-links {
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.navbtn {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+.navbtn:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  padding: 5px;
+  color: black;
+  text-decoration: none;
+
+}
+
+.logo:hover {
+  cursor: pointer;
+  text-decoration: underline overline;
+  text-decoration-style: dotted;
+}
+
+section {
+  padding-top: 2vh;
+  height: auto;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  box-sizing: content-box;
+  min-height: 96vh;
+  padding-bottom: 2vh;
+  scroll-margin-top: 8vh;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  border-top: 15vh solid transparent;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  height: auto;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+
+.section__pic-container {
+  display: flex;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  border: 0.1rem transparent black;
+  border-radius: 15%;
+  box-shadow: 0px 0px 20px 2px rgba(250, 150, 100, 0.5);
+}
+
+.section__text {
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+
+/* ICONS */
+
+.icon {
+  height: 2.5rem;
+}
+
+#socials-container .icon {
+  cursor: pointer;
+  height: 2.5rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+#socials-container .icon:hover {
+  transform: scale(1.2) rotate(350deg);
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1 {
+  background: rgb(53, 53, 53) 0.1rem;
+  color: white;
+}
+
+.btn-color-1:hover {
+  cursor: pointer;
+  background: rgb(0, 0, 0);
+  transform: scale(1.1);
+  box-shadow: 0px 0px 20px 2px rgba(250, 0, 0, 0.5);
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  position: relative;
+}
+
+.text-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: justify;
+  align-content: center;
+}
+
+.section-container {
+  gap: 4rem;
+  height: 80;
+  margin-top: 7rem;
+  flex-wrap: wrap;
+}
+
+.section__pic-container {
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+/* ============================
+   EDUCATION TABLE
+============================ */
+
+.table-container {
+  width: 60%;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1.5rem;
+}
+
+table thead {
+  background: rgb(250, 250, 250);
+}
+
+table th {
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgb(163, 163, 163);
+  color: black;
+  text-align: left;
+}
+
+table td {
+  padding: 1rem;
+  border-bottom: 0.1rem solid rgb(200, 200, 200);
+  color: rgb(85, 85, 85);
+}
+
+table tr:hover {
+  background: rgb(245, 245, 245);
+}
+
+/* Skills Section */
+
+#experience {
+  position: relative;
+}
+
+.experience-sub-title {
+  padding: 2rem 0 0 0;
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+.skills-container {
+  margin: 15vh 0;
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: justify;
+  align-content: center;
+}
+
+/* Projects section */
+
+#projects {
+  position: relative;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  border: 0.1rem solid rgb(163, 163, 163);
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-container {
+  margin: 2rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  align-content: center;
+}
+
+.project-details-container {
+
+  display: flex;
+
+}
+
+.project-sec {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+/* CONTACT */
+
+#contact {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: (250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin: 1rem 5rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: pointer;
+}
+
+.email-icon {
+  height: 3rem;
+}
+
+/* Footer */
+.footer{
+  text-align: center;
+}
